@@ -16,7 +16,7 @@ Gem::Specification.new do |s|
   s.require_path = 'lib'
   s.requirements << 'none'
 
-  s.add_runtime_dependency 'solidus_core', '~> 1.1'
+  s.add_runtime_dependency 'solidus_core', '~> 1.1', '>= 2.2.2'
   s.add_runtime_dependency 'cpf_cnpj', '~> 0.2', '>= 0.2.1'
   s.add_runtime_dependency 'validates_timeliness', '~> 4.0'
   s.add_runtime_dependency 'rest-client', '~> 1.8', '>= 1.8.0'
@@ -26,7 +26,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'database_cleaner', '~> 1.5', '>= 1.5.1'
   s.add_development_dependency 'factory_girl', '~> 4.5'
   s.add_development_dependency 'ffaker'
-  s.add_development_dependency 'rspec-rails',  '~> 3.4'
+  s.add_development_dependency 'rspec-rails',  '~> 3.4', '>= 3.4'
   s.add_development_dependency 'sass-rails', '~> 5.0.4'
   s.add_development_dependency 'selenium-webdriver'
   s.add_development_dependency 'sqlite3'
