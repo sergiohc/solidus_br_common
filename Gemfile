@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'solidus'
-gem 'solidus_auth_devise'
+gem 'solidus_auth_devise' 
 
 group :test do
   gem 'rspec-activemodel-mocks', '~> 1.0.2'
