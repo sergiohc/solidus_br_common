@@ -3,7 +3,7 @@
   <%= form.label :city, Spree.t(:city) %><span class="required">*</span><br />
   <%= form.collection_select(
               :city_id, address.state ? address.state.cities : [],
-              :id, :name,
+              :id, :cities
               {:include_blank => false},
               {:class => 'form-control required'}
       ) %>
