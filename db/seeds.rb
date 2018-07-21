@@ -1,5 +1,5 @@
 # Loads seed data out of default dir
-default_path = File.join(File.dirname(__FILE__), 'default/spree')
+Dir[File.join(__dir__, 'default', '*.rb')].each { |file| require file }
 
 Rake::Task['db:load_dir'].reenable
 Rake::Task['db:load_dir'].invoke(default_path)
