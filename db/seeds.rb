@@ -1,5 +1,6 @@
 %w(
   country
+  states
   shipping_categories
   shipping_zones
   states_cities_of_acre
@@ -29,7 +30,6 @@
   states_cities_of_sao_paulo
   states_cities_of_sergipe
   states_cities_of_tocantins
-  states
   stock
   tax_categories
   user
