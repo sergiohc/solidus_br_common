@@ -1,5 +1,39 @@
-# Loads seed data out of default dir
-#Dir[File.join(__dir__, 'default', '*.rb')].each { |file| require file }
-default_path = File.join(File.dirname(__FILE__), 'default')
-Rake::Task['db:load_dir'].reenable
-Rake::Task['db:load_dir'].invoke(default_path)
+%w(
+  country
+  shipping_categories
+  shipping_zones
+  states_cities_of_acre
+  states_cities_of_alagoas
+  states_cities_of_amapa
+  states_cities_of_amazonas
+  states_cities_of_bahia
+  states_cities_of_ceara
+  states_cities_of_distrito_federal
+  states_cities_of_espirito_santo
+  states_cities_of_goias
+  states_cities_of_maranhao
+  states_cities_of_mato_grosso_do_sul
+  states_cities_of_mato_grosso
+  states_cities_of_minas_gerais
+  states_cities_of_para
+  states_cities_of_paraiba
+  states_cities_of_parana
+  states_cities_of_pernanbuco
+  states_cities_of_piaui
+  states_cities_of_rio_de_janeiro
+  states_cities_of_rio_grande_do_norte
+  states_cities_of_rio_grande_do_sul
+  states_cities_of_rondonia
+  states_cities_of_roraima
+  states_cities_of_santa_catarina
+  states_cities_of_sao_paulo
+  states_cities_of_sergipe
+  states_cities_of_tocantins
+  states
+  stock
+  tax_categories
+  user
+).each do |seed|
+  puts "Loading seed file: #{seed}"
+  require_relative "default/#{seed}"
+end
