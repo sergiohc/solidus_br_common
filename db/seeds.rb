@@ -18,7 +18,7 @@
   states_cities_of_para
   states_cities_of_paraiba
   states_cities_of_parana
-  states_cities_of_pernanbuco
+  states_cities_of_pernambuco
   states_cities_of_piaui
   states_cities_of_rio_de_janeiro
   states_cities_of_rio_grande_do_norte
