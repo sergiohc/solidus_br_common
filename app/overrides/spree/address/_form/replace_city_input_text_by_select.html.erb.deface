@@ -1,8 +1,9 @@
 <!-- replace 'p[data-erb-id*="city"]' -->
 <p class="field" id=<%="#{address_id}city" %>>
-  <%= form.label :city, Spree.t(:city) %><span class="required">*</span><br />
+  <%= form.label :city, t('spree.city') %>
+  <span class="required">*</span><br />
   <%= form.collection_select(
-              :city_id, address.state ? address.state.cities : [],
+              :city_id, address.country.states ? address.country.states.cities : [],
               :id, :name,
               {:include_blank => false},
               {:class => 'form-control required'}
@@ -16,3 +17,4 @@
     </script>
   <% end %>
 </p>
+
