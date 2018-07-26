@@ -57,7 +57,7 @@ Spree.ready(function ($) {
 
     Spree.updateCity = function (region) {
       var stateId = Spree.getStateId(region);
-      if (stateId !== '') {
+      if (stateId !== null) {
         if (!Spree.Checkout[stateId] || !Spree.Checkout[stateId].cities) {
           return Spree.ajax(
             Spree.routes.cities_search,
